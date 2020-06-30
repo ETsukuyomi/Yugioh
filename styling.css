@@ -1,0 +1,164 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: red;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+li.menu {
+    float: left;
+    padding-left: 12%;
+  }
+  
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: yellow;
+}
+.active {
+    background-color: green;
+}
+
+body {
+    background-color: lightblue;
+
+}
+
+
+
+
+
+
+.bottom{
+    border-top: solid 1px black;
+    ali
+    
+}
+
+.row{
+    display: flex;
+}
+.column{
+    flex: 50%;
+}
+.title{
+    text-align: center;
+}
+#swap_image{
+    padding-left: 37%;
+}
+
+
+
+.currentTopDecks{
+    text-align: center;
+    size: 20px;
+    background-color: cadetblue;
+}
+
+.currentTopDecksPic{
+    width: 150px;
+    border: 20px groove #095484;
+}
+
+.currentTopDecksDesc{
+    width: 750x;
+    border: 20px groove #095484;
+}
+
+.currentTopDecksTable{
+    width: 1100px;
+}
+
+.sidenav {
+    width: 190px;
+    z-index: 1;
+    margin-top: 200px;
+    margin-right: 2px;
+    background: lightblue;
+    overflow-x: hidden;
+    padding: 8px 0;
+    border: 2px solid black;
+  }
+  
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #2196F3;
+    display: block;
+  }
+  
+  .sidenav a:hover {
+    color: #064579;
+  }
+
+  .sidenav h2{
+      padding-left: 10px;
+  }
+  
+  .main {
+    margin-left: 140px; /* Same width as the sidebar + left position in px */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+.meta1h3{
+    text-align: center;
+}
+
+
+
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+}
+  
+  .dropdown {
+    position: grid ;
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown a:hover {background-color: #ddd;}
+  
+.show {display: block;}
