@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Homepage">
+    <link type="text/css" rel="stylesheet" href="styling.css">
+    <title>Yu-Gi-Oh!</title>
+    <script id="hpage">
+        let myTimer = setInterval(imageRandom, 3000);
+        function imageRandom(){
+            let randomNumber = Math.floor(Math.random() * 4) + 1;
+            document.getElementById("swap_image").src = randomNumber + ".png";
+        }
+    </script>
+</head>
+<header>Weeb</header>
+<ul>
+    <li class="menu"><a href="index.html">Home</a></li>
+    <li class="menu"><a href="meta1.html">Current Meta</a></li>
+    <li class="menu"><a href="meta2.html">Past Meta</a></li>
+    <li class="menu"><a href="meta3.html">OCG Meta</a></li>
+    <li class="menu"><a href="tips.html">Card Tips</a></li>
+
+  </ul>
+<body>
+    <h1 class="title">Yu-Gi-Oh Deck Building</h1>
+    <figure>
+        <img id="swap_image" src="default.png" alt="Yu-Gi-Oh images" width="496" height="146">
+    </figure>
+    <p>
+        Welcome to all of your current up to date news in the Yu-Gi-Oh TCG! Get all of the current information,
+        tips and tricks, and other related content here!<br>
+        Due to the current pandemic, all information is subject to change as Konami tries to adapt to the current
+        situation so we will try our best sure the information remains accurate!
+    </p>
+    <h1>Official Rule Changes</h1>
+    <iframe width="420" height="300" src="https://www.youtube.com/embed/U4drzDRLQLU"></iframe>
+    <h1>Booster Box Timeline</h1>
+    <table>
+        <tr>
+            <th>Picture</th>
+            <th>Set name</th>
+            <th>Release Date</th>
+        </tr>
+        <tr>         
+            <th><img src="secretslayers.png" alt="secret slayers set" width="150" height="300"></th>
+            <th>Secret Slayer</th>
+            <th>April 3 2020</th>
+          </tr>  
+        <tr>
+          <th><img src="eternitycode.png" alt="eternity code set" width="150" height="300"></td>
+          <th>Eternity Code</td>
+          <th>June 5 2020<br><i>subject to change</i></th>
+        </tr>
+        <tr>
+          <th><img src="toonchaos.png" alt="toon chaos set" width="150" height="300"></td>
+          <th>Toon Chaos</td>
+          <th>June 19 2020<br><i>subject to change</i></th>
+        </tr>
+        <tr>
+            <th>No image yet</td>
+            <th>Battles of Legend: Armageddon</td>
+            <th>July 24 2020<br><i>subject to change</i></th>
+          </tr>
+        <tr>
+            <th><img src="rise.png" alt="rise of the duelist set" width="150" height="300"></td>
+            <th>Rise of the Duelist</td>
+            <th>August 7 2020<br><i>subject to change</i></th>
+          </tr>
+      </table>
+      <footer>
+        <p>Bo Kok</p>
+        <p>link to the <a href="https://www.yugioh-card.com/en/">official </a>website</p>
+        <p>For more information on Yu-Gi-Oh, visit <a href="https://ygorganization.com/">YGOrganization</a></p>
+      </footer>
+</body>
+</html>
