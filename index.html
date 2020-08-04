@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Homepage">
     <link type="text/css" rel="stylesheet" href="styling.css">
+    <script src="javascript.js"></script>
     <title>Yu-Gi-Oh!</title>
     <script id="hpage">
         let myTimer = setInterval(imageRandom, 3000);
@@ -13,66 +14,323 @@
             document.getElementById("swap_image").src = randomNumber + ".png";
         }
     </script>
+
 </head>
 <header>Weeb</header>
-<ul>
-    <li class="menu"><a href="index.html">Home</a></li>
-    <li class="menu"><a href="meta1.html">Current Meta</a></li>
-    <li class="menu"><a href="meta2.html">Past Meta</a></li>
-    <li class="menu"><a href="meta3.html">OCG Meta</a></li>
-    <li class="menu"><a href="tips.html">Card Tips</a></li>
+<div id="main">
+<div class="menu">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="meta1.html">Current Meta</a></li>
+			<li><a href="meta2.html">Past Meta</a></li>
+			<li><a href="meta3.html">OCG Meta</a></li>
+			<li><a href="tips.html">Card Tips</a></li>
+			<li><a href="cardList.html">Card List</a></li>
+            
+		</ul>
+</div>
 
-  </ul>
 <body>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <ul>
+      <li>
+      <input class="cd-accordion__input" type="checkbox" name="group-1" id="group-1">
+      <label class="cd-accordion__label" for="group-1">YuGiOh TCG</label>
+            <ul class="cd-accordion__sub">
+                <li>
+                <input class="cd-accordion__input" type="checkbox" name="sub-group-1" id="sub-group-1">
+                <label class="cd-accordion__label" for="sub-group-1">2020</label>
+                    <ul class="cd-accordion__sub">
+                      <li><a class="cd-accordion__label" href="#january2020">January</a></li>
+                      <li><a class="cd-accordion__label" href="#february2020">February</a></li>
+                      <li><a class="cd-accordion__label" href="#march2020">March</a></li>
+                      <li><a class="cd-accordion__label" href="#april2020">April</a></li>
+                      <li><a class="cd-accordion__label" href="#may2020">May</a></li>
+                      <li><a class="cd-accordion__label" href="#june2020">June</a></li>
+                      <li><a class="cd-accordion__label" href="#july2020">July</a></li>
+                      <li><a class="cd-accordion__label" href="#august2020">August</a></li>
+                      <li><a class="cd-accordion__label" href="#september2020">September</a></li>
+                      <li><a class="cd-accordion__label" href="#october2020">October</a></li>
+                      <li><a class="cd-accordion__label" href="#november2020">November</a></li>
+                      <li><a class="cd-accordion__label" href="#december2020">December</a></li>
+                    </ul>
+                </li>
+                <li>
+                <input class="cd-accordion__input" type="checkbox" name="sub-group-1-1" id="sub-group-1-1">
+                <label class="cd-accordion__label" for="sub-group-1-1">2019</label>
+                     <ul class="cd-accordion__sub">
+                       <li><a class="cd-accordion__label" href="#january2019">January</a></li>
+                       <li><a class="cd-accordion__label" href="#february2019">February</a></li>
+                       <li><a class="cd-accordion__label" href="#march2019">March</a></li>
+                       <li><a class="cd-accordion__label" href="#april2019">April</a></li>
+                       <li><a class="cd-accordion__label" href="#may2019">May</a></li>
+                       <li><a class="cd-accordion__label" href="#june2019">June</a></li>
+                       <li><a class="cd-accordion__label" href="#july2019">July</a></li>
+                       <li><a class="cd-accordion__label" href="#august2019">August</a></li>
+                       <li><a class="cd-accordion__label" href="#september2019">September</a></li>
+                       <li><a class="cd-accordion__label" href="#october2019">October</a></li>
+                       <li><a class="cd-accordion__label" href="#november2019">November</a></li>
+                       <li><a class="cd-accordion__label" href="#december2019">December</a></li>
+                    </ul>
+                </li>
+            </ul>      
+      </li>
+
+      <li>
+      <input class="cd-accordion__input" type="checkbox" name="group-2" id="group-2">
+      <label class="cd-accordion__label" for="group-2">Speed Duel</label>
+            <ul class="cd-accordion__sub">
+                <li>
+                <input class="cd-accordion__input" type="checkbox" name="sub-group-2" id="sub-group-2">
+                <label class="cd-accordion__label" for="sub-group-2">2020</label>
+                    <ul class="cd-accordion__sub">
+                      <li><a class="cd-accordion__label" href="#sdJanuary2020">January</a></li>
+                      <li><a class="cd-accordion__label" href="#sdFebruary2020">February</a></li>
+                      <li><a class="cd-accordion__label" href="#sdMarch2020">March</a></li>
+                      <li><a class="cd-accordion__label" href="#sdApril2020">April</a></li>
+                      <li><a class="cd-accordion__label" href="#sdMay2020">May</a></li>
+                      <li><a class="cd-accordion__label" href="#sdJune2020">June</a></li>
+                      <li><a class="cd-accordion__label" href="#sdJuly2020">July</a></li>
+                      <li><a class="cd-accordion__label" href="#sdAugust2020">August</a></li>
+                      <li><a class="cd-accordion__label" href="#sdSeptember2020">September</a></li>
+                      <li><a class="cd-accordion__label" href="#sdOctober2020">October</a></li>
+                      <li><a class="cd-accordion__label" href="#sdNovember2020">November</a></li>
+                      <li><a class="cd-accordion__label" href="#sdDecember2020">December</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                <input class="cd-accordion__input" type="checkbox" name="sub-group-2-1" id="sub-group-2-1">
+                <label class="cd-accordion__label" for="sub-group-2-1">2019</label>
+                     <ul class="cd-accordion__sub">
+                      <li><a class="cd-accordion__label" href="#sdJanuary2019">January</a></li>
+                      <li><a class="cd-accordion__label" href="#sdFebruary2019">February</a></li>
+                      <li><a class="cd-accordion__label" href="#sdMarch2019">March</a></li>
+                      <li><a class="cd-accordion__label" href="#sdApril2019">April</a></li>
+                      <li><a class="cd-accordion__label" href="#sdMay2019">May</a></li>
+                      <li><a class="cd-accordion__label" href="#sdJune2019">June</a></li>
+                      <li><a class="cd-accordion__label" href="#sdJuly2019">July</a></li>
+                      <li><a class="cd-accordion__label" href="#sdAugust2019">August</a></li>
+                      <li><a class="cd-accordion__label" href="#sdSeptember2019">September</a></li>
+                      <li><a class="cd-accordion__label" href="#sdOctober2019">October</a></li>
+                      <li><a class="cd-accordion__label" href="#sdNovember2019">November</a></li>
+                      <li><a class="cd-accordion__label" href="#sdDecember2019">December</a></li>
+                    </ul>
+                </li>
+            </ul>
+      </li>
+  </ul> 
+    
+</div>
+
+<span class="searchBy" onclick="openNav()">&#9776; Search by Date</span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginRight = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginRight= "0";
+}
+</script>
     <h1 class="title">Yu-Gi-Oh Deck Building</h1>
+<div class="homeTop">
+    <div class="zl">
     <figure>
         <img id="swap_image" src="default.png" alt="Yu-Gi-Oh images" width="496" height="146">
     </figure>
-    <p>
-        Welcome to all of your current up to date news in the Yu-Gi-Oh TCG! Get all of the current information,
-        tips and tricks, and other related content here!<br>
-        Due to the current pandemic, all information is subject to change as Konami tries to adapt to the current
+        <p>
+        Welcome to all of your current up to date news in the Yu-Gi-Oh TCG! Get all of the current information,<br>
+        tips and tricks, and other related content here!
+        Due to the current pandemic, all information is subject <br> to change as Konami tries to adapt to the current
         situation so we will try our best sure the information remains accurate!
     </p>
+    </div>
+<div class="kl">
     <h1>Official Rule Changes</h1>
     <iframe width="420" height="300" src="https://www.youtube.com/embed/U4drzDRLQLU"></iframe>
+</div>
+</div>
     <h1>Booster Box Timeline</h1>
-    <table>
+    
+    <table class="speedDuel">
         <tr>
             <th>Picture</th>
             <th>Set name</th>
             <th>Release Date</th>
         </tr>
-        <tr>         
-            <th><img src="secretslayers.png" alt="secret slayers set" width="150" height="300"></th>
-            <th>Secret Slayer</th>
-            <th>April 3 2020</th>
-          </tr>  
+        <tr>
+        <th id="sdMay2020"><img src="card_pictures/matchofmillennium.png" alt="Legendary Duelist: Rage of Ra" width="150" height="300">
+            <th>Starter Decks:<br> Match of the Millennium<br> & Twisted Nightmares</th>
+            <th>May 21 2020</th>
+        </th>
+	    <tr>
+            <th id="sdDecember2019"><img src="card_pictures/trialsofthekingdom.png" alt="Trials of The Kingdom SD" width="150" height="300"></th>
+            <th>Trials of the Kingdom</th>
+            <th>December 12 2019</th>
+        </tr>
+	    <tr>
+            <th id="sdAugust2019"><img src="card_pictures/scars.png" alt="Scars of the Battle" width="150" height="300"></th>
+            <th>Scars of the Battle</th>
+            <th>August 1 2019</th>
+        </tr>
+	    <tr>
+            <th><img src="card_pictures/ultimatepredators.jpg" alt="" width="150" height="300"></th>
+            <th>Starter Decks:<br> Ultimate Predators</th>
+            <th>August 1 2019</th>
+        </tr>
+	    <tr>
+            <th id="sdMay2019"><img src="card_pictures/attackfromthedeep.png" alt="Attack from the Deep" width="150" height="300"></th>
+            <th>Attack from the Deep</th>
+            <th>May 30 2019</th>
+        </tr>
+	    <tr>
+            <th id="sdMarch2019"><img src="card_pictures/arenaoflostsouls.jpg" alt="Arena of Lost Souls" width="150" height="300"></th>
+            <th> Arena of Lost Souls</th>
+            <th>March 28 2019</th>
+        </tr>
+	    <tr>
+            <th id="sdJanuary2019"><img src="card_pictures/dmdt.jpg" alt="Destiny Masters & Duelists of Tomorrow" width="150" height="300"></th>
+            <th>Destiny Masters<br> & Duelists of Tomorrow</th>
+            <th>January 24 2019</th>
+        </tr>
+
+    </table>
+    
+    <table class="yugiohTCG">
+        <tr>
+            <th>Picture</th>
+            <th>Set name</th>
+            <th>Release Date</th>
+        </tr>
+        <tr>
+            <th id="september2020"><img src="card_pictures/rageofra.png" alt="Legendary Duelist: Rage of Ra" width="150" height="300"></th>
+            <th>Legendary Duelist:<br> Rage of Ra</th>
+            <th>September 24 2020</th>
+        </tr>
+        <tr>
+            <th id="august2020"><img src="rise.png" alt="rise of the duelist set" width="150" height="300"></td>
+            <th>Rise of the Duelist</td>
+            <th>August 7 2020<br><i>subject to change</i></th>
+        </tr>
+        <tr>
+            <th id="july2020"><img src="card_pictures/battlesoflegend.png" alt="battles of legend set" width="150" height="300"</td>
+            <th>Battles of Legend:<br> Armageddon</td>
+            <th>July 24 2020<br><i>subject to change</i></th>
+        </tr>
+        <tr>
+          <th id="june2020"><img src="toonchaos.png" alt="toon chaos set" width="150" height="300"></td>
+          <th>Toon Chaos</td>
+          <th>June 19 2020<br><i>subject to change</i></th>
+        </tr>
         <tr>
           <th><img src="eternitycode.png" alt="eternity code set" width="150" height="300"></td>
           <th>Eternity Code</td>
           <th>June 5 2020<br><i>subject to change</i></th>
         </tr>
-        <tr>
-          <th><img src="toonchaos.png" alt="toon chaos set" width="150" height="300"></td>
-          <th>Toon Chaos</td>
-          <th>June 19 2020<br><i>subject to change</i></th>
+        <tr>         
+            <th id="april2020"><img src="secretslayers.png" alt="secret slayers set" width="150" height="300"></th>
+            <th>Secret Slayer</th>
+            <th>April 3 2020</th>
+        </tr>  
+	    <tr>
+            <th id="january2020"><img src="card_pictures/ignitionassault.jpg" alt="Ignition Assault" width="150" height="300"></th>
+            <th>Ignition Assault`</th>
+            <th>January 30 2020</th>
         </tr>
-        <tr>
-            <th>No image yet</td>
-            <th>Battles of Legend: Armageddon</td>
-            <th>July 24 2020<br><i>subject to change</i></th>
-          </tr>
-        <tr>
-            <th><img src="rise.png" alt="rise of the duelist set" width="150" height="300"></td>
-            <th>Rise of the Duelist</td>
-            <th>August 7 2020<br><i>subject to change</i></th>
-          </tr>
+	    <tr>
+            <th><img src="card_pictures/magicalhero.jpg" alt="Magical Hero" width="150" height="300"></th>
+            <th>Legendary Duelists:<br> Magical Hero</th>
+            <th>January 16 2020</th>
+        </tr>
+	    <tr>
+            <th id="november2019"><img src="card_pictures/mysticfighters.jpg" alt="Mystic Fighters" width="150" height="300"></th>
+            <th>Mystic Fighters</th>
+            <th>November 21 2019</th>
+        </tr>
+	    <tr>
+            <th id="october2019"><img src="card_pictures/chaosimpact.png" alt="Chaos Impact" width="150" height="300"></th>
+            <th>Chaos Impact</th>
+            <th>October 24 2019</th>
+        </tr>
+	    <tr>
+            <th id="september2019"><img src="card_pictures/immortaldestiny.jpg" alt="Immortal Destiny" width="150" height="300"></th>
+            <th>Immortal Destiny</th>
+            <th>September 26 2019</th>
+        </tr>
+	    <tr>
+            <th id="august2019"><img src="card_pictures/fistsofthegadgets.jpg" alt="Fists of the Gadgets" width="150" height="300"></th>
+            <th>Fists of the Gadgets</th>
+            <th>August 22 2019</th>
+        </tr>
+	    <tr>
+            <th id="july2019"><img src="card_pictures/risingrampage.png" alt="Rising Rampage" width="150" height="300"></th>
+            <th>Rising Rampage</th>
+            <th>July 25 2019</th>
+        </tr>
+	    <tr>
+            <th><img src="card_pictures/herosrevenge.png" alt="Hero's Revenge" width="150" height="300"></th>
+            <th>Battles of Legend:<br> Hero's Revenge</th>
+            <th>July 11 2019</th>
+        </tr>
+	    <tr>
+            <th id="may2020"><img src="card_pictures/darkneostorm.png" alt="Dark Neostorm" width="150" height="300"></th>
+            <th>Dark Neostorm</th>
+            <th>May 2 2019</th>
+        </tr>
+
       </table>
+
+      <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+      <script>
+      //Get the button:
+mybutton = document.getElementById("topBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
+</head>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });   
+}
+</script>
       <footer>
         <p>Bo Kok</p>
         <p>link to the <a href="https://www.yugioh-card.com/en/">official </a>website</p>
         <p>For more information on Yu-Gi-Oh, visit <a href="https://ygorganization.com/">YGOrganization</a></p>
       </footer>
+</div>
 </body>
 </html>
